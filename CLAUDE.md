@@ -106,3 +106,10 @@ questions come before implementation rather than after mistakes.
 - If any of these verification steps fails, do not move to the next step —
   fix that failure first, then proceed. Don't ignore a failing step with a
   justification like "it works in the big picture."
+- Before starting a non-trivial task, check whether an installed skill
+  (e.g. under `.agents/skills/`, or any skill added via the `skills` CLI)
+  covers it — this includes skills for database work, testing, debugging,
+  planning, code review, or finishing a branch, regardless of which
+  collection they came from. If a relevant skill exists, follow it instead
+  of improvising your own approach. If no installed skill fits, say so
+  explicitly rather than silently proceeding without checking.
