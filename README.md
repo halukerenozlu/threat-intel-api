@@ -1,45 +1,26 @@
 # threat-intel-api
 
-Çoklu kaynaktan tehdit istihbaratı (threat intelligence) verisi toplayan,
-birleştiren ve kimlik doğrulamalı bir REST API üzerinden sunan bir Go projesi.
+A Go project that collects and aggregates threat intelligence data from multiple sources
+and serves it via an authenticated REST API.
 
-## Ne işe yarar?
+## What does it do?
 
-Bir IP adresi, URL veya dosya hash'i sorgulandığında sistem şu kaynaklara
-aynı anda istek atar ve sonuçları birleştirip tek bir tehdit puanı döner:
+When an IP address, URL, or file hash is queried, the system
+simultaneously sends requests to the following sources and combines the results to return a single threat score:
 
 - AbuseIPDB
 - VirusTotal
 - URLhaus
 - AlienVault OTX
 
-## Teknoloji yığını
+## Technology stack
 
-- **Dil**: Go 1.23
-- **Veritabanı**: PostgreSQL
+- **Language**: Go 1.26
+- **Database**: PostgreSQL
 - **Authentication**: JWT (JSON Web Token)
-- **Dahili iletişim** (planlanan): gRPC
-- **AI özelliği** (planlanan): LLM tabanlı rapor özetleme
+- **Internal communication** (planned): gRPC
+- **AI Feature** (planned): LLM-based report summarization
 
-## Proje durumu
+## Project Status
 
-🚧 Geliştirme aşamasında — henüz çalışır bir sürüm yok.
-
-## Kurulum
-
-```bash
-git clone https://github.com/halukerenozlu/threat-intel-api.git
-cd threat-intel-api
-cp .env.example .env
-# .env dosyasını kendi API anahtarlarınla doldur
-go mod download
-go run cmd/server/main.go
-```
-
-## Mimari
-
-Detaylı mimari ve veritabanı şeması için `docs/` klasörüne bakabilirsin.
-
-## Lisans
-
-TBD
+🚧 Under development — no working version available yet.
