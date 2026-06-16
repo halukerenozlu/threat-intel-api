@@ -1,0 +1,25 @@
+# Ortam değişkenleri ve secret'lar - ASLA commit edilmemeli
+.env
+*.env.local
+
+# Derlenmiş binary'ler
+/bin/
+/tmp/
+threat-intel-api
+*.exe
+
+# Go test ve cache dosyaları
+*.test
+*.out
+coverage.txt
+
+# IDE dosyaları
+.vscode/
+.idea/
+*.swp
+
+# OS dosyaları
+.DS_Store
+
+# Log dosyaları
+*.log
